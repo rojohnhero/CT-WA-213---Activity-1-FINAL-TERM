@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+:root { --green:#176b45; --dark:#123d2c; --light:#f3f7f4; --text:#20352b; }
+body { margin:0; font-family:Arial, sans-serif; background:var(--light); color:var(--text); }
+.topbar { min-height:68px; padding:0 7%; display:flex; align-items:center; justify-content:space-between; background:white; border-bottom:1px solid #e1e9e3; }
+.brand { color:var(--green); font-weight:800; font-size:20px; text-decoration:none; }
+.brand span { color:var(--text); font-weight:500; font-size:14px; margin-left:8px; }
+nav { display:flex; gap:22px; } nav a { color:var(--text); text-decoration:none; font-weight:600; font-size:14px; }
+nav a:hover, a { color:var(--green); }
+.container { width:min(100% - 32px, 1000px); margin:48px auto; min-height:70vh; }
+.auth-card { width:min(100%, 460px); margin:30px auto; padding:38px; background:white; border:1px solid #e2ebe4; border-radius:16px; box-shadow:0 12px 35px #173d2c0d; }
+.eyebrow { color:var(--green); font-size:11px; letter-spacing:1.6px; font-weight:800; }
+h1 { font-size:30px; margin:12px 0 8px; color:var(--dark); }
+h2 { color:var(--dark); margin-top:0; } .muted { color:#718078; line-height:1.6; }
+form { margin-top:25px; } label { display:block; font-size:13px; font-weight:700; margin:15px 0 7px; }
+input, select { width:100%; padding:13px 14px; border:1px solid #d5e0d8; border-radius:8px; font-size:14px; background:white; }
+input:focus, select:focus { outline:2px solid #b8ddc7; border-color:var(--green); }
+.btn { width:100%; border:0; padding:14px; margin-top:22px; background:var(--green); color:white; font-size:15px; font-weight:700; border-radius:8px; cursor:pointer; }
+.btn:hover { background:var(--dark); }
+.switch { text-align:center; margin:22px 0 0; font-size:14px; }
+.alert, .success { padding:12px; border-radius:8px; margin-top:16px; font-size:14px; }
+.alert { color:#8a2525; background:#fff0f0; } .success { color:#176b45; background:#eaf7ee; }
+.welcome, .panel { background:white; border:1px solid #e2ebe4; border-radius:14px; padding:30px; margin-bottom:22px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; margin-top:22px; }
+.tile { background:#f4f8f5; border:1px solid #e1ebe3; padding:18px; border-radius:10px; }
+.tile h3 { margin:0 0 8px; color:var(--green); } .tile p, .panel p { line-height:1.6; color:#65756b; }
+.footer { text-align:center; padding:22px; color:#829087; font-size:12px; }
+@media(max-width:600px) { .topbar { padding:16px 5%; align-items:flex-start; gap:14px; flex-direction:column; } nav { gap:16px; } .auth-card { padding:25px; } h1 { font-size:25px; } }
